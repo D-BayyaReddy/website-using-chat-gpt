@@ -1,0 +1,101 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./assets/background.jpg'); /* Replace with your paper texture image */
+    background-size: cover;
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav li {
+    margin: 0 5px;
+    color: black; /* Set text color to black */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black; /* Set text color to black */
+    transition: color 0.3s, font-weight 0.3s; /* Add font-weight transition */
+}
+
+nav a:hover {
+    color: #f00;
+    font-weight: 600; /* Increase font-weight on hover */
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav li {
+        margin: 5px 0;
+    }
+    header {
+        padding: 10px;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Adjust the alignment as needed */
+    height: 100vh;
+    margin-left: 50px;
+
+}
+
+.typing-text {
+    font-size: 70px;
+    color: black;
+    text-align: left; /* Align the text to the left */
+    margin-bottom: 20px; /* Add some space between text and button */
+}
+
+#typed-text {
+    display: inline-block;
+}
+
+#cursor {
+    display: inline-block;
+    animation: blink-animation 0.5s infinite;
+}
+
+.hire-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hire-button:hover {
+    background-color: #333;
+}
